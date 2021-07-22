@@ -1,9 +1,265 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Alesia Varonich</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<head>
+  <title>The Tea Cozy</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+ <style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+body {
+  background-color: #1F203D;
+  font-family: Arial, Helvetica, sans-serif;
+  color: seashell;
+  text-align: center;
+  opacity: 0.9;
+}
+
+header {
+  width: 100%;
+  height:  69px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  
+}
+.logo {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+.logo-img {
+  max-height: 100%;
+  width: auto;
+  display: block;
+  
+}
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a:link {
+  color: seashell;
+  text-align: center;
+  padding: 20.3px 16px;
+  text-decoration: underline;
+}
+
+a:hover:not(.active) {
+  background-color: #4d4d4d;
+  border-left: 1px solid seashell;
+  border-right: 1px solid seashell;
+}
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1200px;
+  height: 700px;
+}
+.mission {
+  background-color: #4e4d28;
+  height: 18%;
+  width: 100%;
+  line-height: 2rem;
+  padding-top: 1.5%;
+}
+.headline {
+  margin: 40px auto 20px;
+  line-height: 2rem;
+  padding-top: 1.5%;
+}
+.featured-gallery,
+.location-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  margin: 0px auto;
+}
+.three-col,
+.two-col {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.image-card {
+  width: 300px;
+  height: 250px;
+  margin: 15px;
+  border: 1px solid #817f42;
+  border-radius: 3px;
+  box-shadow: 3px 2px 5px #4e4d28;
+  background-color: #4e4d28;
+}
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 10px;
+}
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin: auto;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1200px;
+  height: 500px;
+  margin-top: 50px;
+}
+.headline-loc,
+.location-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.headline-loc {
+  padding-top: 50px;
+}
+.location-gallery {
+  padding-bottom: 100px;
+}
+.loc-card {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  border: 1px solid #817f42;
+  border-radius: 3px;
+  box-shadow: 3px 2px 5px #4e4d28;
+  background-color: #4e4d28;
+  opacity: 1;
+  line-height: 3em;
+  padding: 18px 0;
+}
+ </style>
+</head>
+  <body>
+   
+      <header>
+        <div class="logo">
+           <img class="logo-img" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png">
+        </div>
+        <nav class="topnav">
+          <a href="#" class="menu">Mission</a>
+          <a href="#" class="menu">Featured Tea</a>
+          <a href="#" class="menu">Locations</a>
+       </nav>
+      </header>
+
+   <main>
+     <section class="hero">
+       <div class="mission">
+         <h2>Our Mission</h2>
+         <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+       </div>
+     </section>
+
+    <section class="featured">
+      <div class="headline">
+        <h2>Tea of the Month</h2>
+        <h4>What's steeping at The Tea Cozy?</h4>
+      </div>
+
+      <div class="featured-gallery">
+
+        <div class="three-col">
+        <div class="image-card">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg" alt="fall berry blitz tea" />
+          <div class="desc">Fall Berry Blitz Tea</div>
+        </div>
+
+        <div class="image-card">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="spiced rum tea" />
+          <div class="desc">Spiced Rum Tea</div>
+        </div>
+
+        <div class="image-card">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg" alt="seasonal donuts" />
+          <div class="desc">Seasonal Donuts</div>
+        </div>
+
+        </div>
+
+        <div class="two-col">
+        <div class="image-card">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg" alt="myrtle avenue tea" />
+          <div class="desc">Myrtke Ave Tea</div>
+        </div>
+
+         <div class="image-card">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" alt="bedford bizzare tea" />
+          <div class="desc">Bedford Bizzare Tea</div>
+        </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!--Location-->
+
+    <section class="location">
+      
+      <div class="headline-loc">
+        <h2>Locations</h2>
+      </div>
+
+      <div class="location-gallery">
+
+    
+        <div class="loc-card">
+          <h3>Downtown</h3>
+          <p>384 West 4th Street</p>
+          <p>Suite 108</p>
+          <p>Portland, Maine</p>
+        </div>
+
+        <div class="loc-card">
+          <h3>East Bayside</h3>
+          <p>3433 Phisherman's Avenue</p>
+          <p>(Northwest Corner)</p>
+          <p>Portland, Maine</p>
+        </div>
+
+        <div class="loc-card">
+          <h3>Oakdale</h3>
+          <p>515 Crescent Avenue</p>
+          <p>Second Floor</p>
+          <p>Portland, Maine</p>
+        </div>
+
+      </div>
+
+
+  
+      
+    </section>
+
+   </main>
+   
+  </body>
 </html>
